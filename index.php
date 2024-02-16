@@ -1,6 +1,7 @@
 <?php
 // Пришлось приколхозить следующий блок, чтобы этот скрипт работал под Windows !0
 $myCodePage = "utf-8";
+$needToRecodeInput = false;
 if(mb_stripos(php_uname(), 'windows')!==false){
     $needToRecodeInput = true;
     $myCodePage = 'cp1251';
